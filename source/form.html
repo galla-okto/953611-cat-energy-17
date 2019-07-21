@@ -36,74 +36,74 @@
 
     <form class="page__form form" action="https://echo.htmlacademy.ru" method="post">
       <p class="form__item">
-        <label for="form-name">Имя:*</label>
-        <input id="form-name" type="text" name="name" placeholder="Барсик">
+        <label class="form__label" for="form-name">Имя:*</label>
+        <input class="form__input" id="form-name" type="text" name="name" placeholder="Барсик">
       </p>
 
       <p class="form__item">
-        <label for="form-weight">Вес (кг):*</label>
-        <input id="form-weight" type="text" name="name" placeholder="7">
+        <label class="form__label" for="form-weight">Вес (кг):*</label>
+        <input class="form__input" id="form-weight" type="text" name="name" placeholder="7">
       </p>
 
       <p class="form__item">
-        <label for="form-age">Возраст (лет):</label>
-        <input id="form-age" type="text" name="name" placeholder="7">
+        <label class="form__label" for="form-age">Возраст (лет):</label>
+        <input class="form__input" id="form-age" type="text" name="name" placeholder="7">
       </p>
 
       <fieldset class="form__filter filter">
-        <ul>
+        <ul class="filter__list">
           <li class="filter__option">
-            <input type="radio" name="thin" value="Похудение" id="thin" checked>
-            <label for="thin">Похудение</label>
+            <input class="filter__input" type="radio" name="thin" value="Похудение" id="thin" checked>
+            <label class="filter__label" for="thin">Похудение</label>
           </li>
           <li class="filter__option">
-            <input type="radio" name="thick" value="Набор массы" id="thick">
-            <label for="thick">Набор массы</label>
+            <input class="filter__input" type="radio" name="thick" value="Набор массы" id="thick">
+            <label class="filter__label" for="thick">Набор массы</label>
           </li>
           <li class="filter__option">
-            <input type="radio" name="unknown" value="Не знаю (нужен ваш совет)" id="unknown">
-            <label for="unknown">Не знаю (нужен ваш совет)</label>
+            <input class="filter__input" type="radio" name="unknown" value="Не знаю (нужен ваш совет)" id="unknown">
+            <label class="filter__label" for="unknown">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </fieldset>
 
-      <p class="form__label">Контактные данные (владельца кота)</p>
+      <p class="form__legend">Контактные данные (владельца кота)</p>
 
       <p class="form__item">
-        <label for="form-email">e-mail:*</label>
-        <input id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+        <label class="form__label" for="form-email">e-mail:*</label>
+        <input class="form__input" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com">
       </p>
 
       <p class="form__item">
-        <label for="form-telephone">Телефон:*</label>
-        <input id="form-telephone" type="text" name="name" placeholder="8 (960) 900-60-90">
+        <label class="form__label" for="form-telephone">Телефон:*</label>
+        <input class="form__input" id="form-telephone" type="tel" name="name" placeholder="8 (960) 900-60-90">
       </p>
 
-      <p class="form__label">Комментарий</p>
+      <p class="form__legend">Комментарий</p>
 
       <p class="form__item">
-        <textarea name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
       </p>
 
-      <p class="form__label">Дополнительно</p>
+      <p class="form__legend">Дополнительно</p>
 
       <fieldset class="form__filter filter">
-        <ul>
+        <ul class="filter__list">
           <li class="filter__option">
-            <input type="checkbox" name="shugar" id="shugar" checked>
-            <label for="shugar">Сахарозаменитель</label>
+            <input class="filter__input" type="checkbox" name="shugar" id="shugar" checked>
+            <label class="filter__label" for="shugar">Сахарозаменитель</label>
           </li>
           <li class="filter__option">
-            <input type="checkbox" name="water" id="water">
-            <label for="water">Питьевая вода</label>
+            <input class="filter__input" type="checkbox" name="water" id="water">
+            <label class="filter__label" for="water">Питьевая вода</label>
           </li>
           <li class="filter__option">
-            <input type="checkbox" name="milk" id="milk">
-            <label for="milk">Молоко</label>
+            <input class="filter__input" type="checkbox" name="milk" id="milk">
+            <label class="filter__label" for="milk">Молоко</label>
           </li>
           <li class="filter__option">
-              <input type="checkbox" name="vitamine" id="vitamine">
-              <label for="vitamine">Витамины</label>
+              <input class="filter__input" type="checkbox" name="vitamine" id="vitamine">
+              <label class="filter__label" for="vitamine">Витамины</label>
             </li>
         </ul>
       </fieldset>
