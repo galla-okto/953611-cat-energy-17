@@ -2,65 +2,153 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body class="page">
 
-    <header class="page__header main-header">
-        <a class="main-header__logo logo">
-            <img class="logo__image" src="http://placehold.it/150x100" width="" height="" alt="Кэт энерджи">
+  <header class="page__header main-header">
+    <a class="main-header__logo logo">
+      <img class="logo__image" src="http://placehold.it/150x100" width="" height="" alt="Кэт энерджи">
+    </a>
+
+    <nav class="main-header__nav main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page__main">
+    <h1 class="page__title">Подбор программы</h1>
+
+    <p class="page__comments">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+    <form class="page__form form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form__item">
+        <label class="form__label" for="form-name">Имя:*</label>
+        <input class="form__input" id="form-name" type="text" name="name" placeholder="Барсик">
+      </p>
+
+      <p class="form__item">
+        <label class="form__label" for="form-weight">Вес (кг):*</label>
+        <input class="form__input" id="form-weight" type="text" name="name" placeholder="7">
+      </p>
+
+      <p class="form__item">
+        <label class="form__label" for="form-age">Возраст (лет):</label>
+        <input class="form__input" id="form-age" type="text" name="name" placeholder="7">
+      </p>
+
+      <fieldset class="form__filter filter">
+        <ul class="filter__list">
+          <li class="filter__option">
+            <input class="filter__input" type="radio" name="thin" value="Похудение" id="thin" checked>
+            <label class="filter__label" for="thin">Похудение</label>
+          </li>
+          <li class="filter__option">
+            <input class="filter__input" type="radio" name="thick" value="Набор массы" id="thick">
+            <label class="filter__label" for="thick">Набор массы</label>
+          </li>
+          <li class="filter__option">
+            <input class="filter__input" type="radio" name="unknown" value="Не знаю (нужен ваш совет)" id="unknown">
+            <label class="filter__label" for="unknown">Не знаю (нужен ваш совет)</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <p class="form__legend">Контактные данные (владельца кота)</p>
+
+      <p class="form__item">
+        <label class="form__label" for="form-email">e-mail:*</label>
+        <input class="form__input" id="form-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+      </p>
+
+      <p class="form__item">
+        <label class="form__label" for="form-telephone">Телефон:*</label>
+        <input class="form__input" id="form-telephone" type="tel" name="name" placeholder="8 (960) 900-60-90">
+      </p>
+
+      <p class="form__legend">Комментарий</p>
+
+      <p class="form__item">
+        <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </p>
+
+      <p class="form__legend">Дополнительно</p>
+
+      <fieldset class="form__filter filter">
+        <ul class="filter__list">
+          <li class="filter__option">
+            <input class="filter__input" type="checkbox" name="shugar" id="shugar" checked>
+            <label class="filter__label" for="shugar">Сахарозаменитель</label>
+          </li>
+          <li class="filter__option">
+            <input class="filter__input" type="checkbox" name="water" id="water">
+            <label class="filter__label" for="water">Питьевая вода</label>
+          </li>
+          <li class="filter__option">
+            <input class="filter__input" type="checkbox" name="milk" id="milk">
+            <label class="filter__label" for="milk">Молоко</label>
+          </li>
+          <li class="filter__option">
+              <input class="filter__input" type="checkbox" name="vitamine" id="vitamine">
+              <label class="filter__label" for="vitamine">Витамины</label>
+            </li>
+        </ul>
+      </fieldset>
+
+      <button class="form__button form__button--order" type="submit">Отправить заявку</button>
+
+      <p class="form__comments">* - Обязательные поля</p>
+    </form>
+
+    <section class="page__contacts contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <img class="contacts__map" src="http://placehold.it/150x100" width="" height="" alt="Адрес на карте">
+    </section>
+  </main>
+
+  <footer class="page__footer main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo logo logo--footer">
+        <img class="logo__image" src="http://placehold.it/150x100" width="" height="" alt="Кэт энерджи">
+      </a>
+
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+      </ul>
+
+      <p class="main-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="copyright__image" src="http://placehold.it/150x100" width="27" height="35"
+            alt="Логотип html Академии">
         </a>
-
-        <nav class="main-header__nav main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <ul class="main-nav__list site-list">
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#">Главная</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="form.html">Подбор программы</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="page__main">
-
-    </main>
-
-    <footer class="page__footer main-footer">
-        <div class="main-footer__wrapper">
-            <a class="main-footer__logo logo logo--footer">
-                <img class="logo__image" src="http://placehold.it/150x100" width="" height="" alt="Кэт энерджи">
-            </a>
-
-            <ul class="main-footer__social social">
-                <li class="social__item">
-                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-                        Инстаграме</a>
-                </li>
-                <li class="social__item">
-                    <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
-                        Фейсбуке</a>
-                </li>
-            </ul>
-
-            <p class="main-footer__copyright copyright">
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-                    <img class="copyright__image" src="http://placehold.it/150x100" width="27" height="35" alt="Логотип html Академии">
-                </a>
-            </p>
-        </div>
-    </footer>
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
