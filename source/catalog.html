@@ -3,46 +3,47 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-inner">
+<body class="page">
 
-  <header class="page-inner__header main-header">
+  <header class="page__header main-header">
     <a class="main-header__logo logo">
       <img class="logo__image" src="img/logo-mobile.svg" width="191" height="38" alt="Кэт энерджи">
     </a>
 
-    <nav class="main-header__nav main-nav">
-      <button class="main-nav__toggle" type="button"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+    <button class="main-header__toggle-menu" type="button"></button>
+
+    <nav class="main-header__navigation main-nav">
+      <ul class="main-nav__list site-list list-default">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
   </header>
 
-  <main class="page-inner__main">
-    <h1 class="page-inner__title">Каталог продукции</h1>
+  <main class="page__main main">
+    <h1 class="main__title">Каталог продукции</h1>
 
-    <section class="page-inner__catalog catalog">
+    <section class="main__catalog catalog">
       <h2 class="visually-hidden">Каталог</h2>
 
-      <ul class="catalog__list">
+      <ul class="catalog__list list-default">
         <li class="catalog__item product">
 
           <a class="product__link" href="#">
-            <h3 class="product__title">Cat Energy PRO 500 г</h3>
+            <h3 class="product__title text--upper">Cat Energy PRO 500 г</h3>
 
             <img class="product__image" src="img/chicken-small-mobile@1x.jpg" width="140" height="144"
               alt="Cat Energy PRO 500 г">
@@ -68,7 +69,7 @@
 
         <li class="catalog__item product">
           <a class="product__link">
-            <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+            <h3 class="product__title text--upper">Cat Energy PRO 1000 г</h3>
 
             <img class="product__image" src="img/chicken-big-mobile@1x.jpg" width="140" height="144"
               alt="Cat Energy PRO 1000 г">
@@ -94,7 +95,7 @@
 
         <li class="catalog__item product">
           <a class="product__link">
-            <h3 class="product__title">Cat Energy PRO 500 г</h3>
+            <h3 class="product__title text--upper">Cat Energy PRO 500 г</h3>
 
             <img class="product__image" src="img/fish-small-mobile@1x.jpg" width="140" height="144"
               alt="Cat Energy PRO 500 г">
@@ -120,7 +121,7 @@
 
         <li class="catalog__item product">
           <a class="product__link">
-            <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+            <h3 class="product__title text--upper">Cat Energy PRO 1000 г</h3>
 
             <img class="product__image" src="img/fish-big-mobile@1x.jpg" width="140" height="144"
               alt="Cat Energy PRO 1000 г">
@@ -146,7 +147,7 @@
 
         <li class="catalog__item product">
           <a class="product__link">
-            <h3 class="product__title">Cat Energy SLIM 500 г</h3>
+            <h3 class="product__title text--upper">Cat Energy SLIM 500 г</h3>
 
             <img class="product__image" src="img/buckwheat-small-mobile@1x.jpg" width="140" height="144"
               alt="Cat Energy SLIM 500 г">
@@ -172,7 +173,7 @@
 
         <li class="catalog__item product">
           <a class="product__link">
-            <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
+            <h3 class="product__title text--upper">Cat Energy SLIM 1000 г</h3>
 
             <img class="product__image" src="img/buckwheat-big-mobile@1x.jpg" width="140" height="144"
               alt="Cat Energy SLIM 1000 г">
@@ -198,7 +199,7 @@
 
         <li class="catalog__item product">
           <a class="product__link">
-            <h3 class="product__title">Cat Energy SLIM 500 г</h3>
+            <h3 class="product__title text--upper">Cat Energy SLIM 500 г</h3>
 
             <img class="product__image" src="img/rice-small-mobile@1x.jpg" width="140" height="144"
               alt="Cat Energy SLIM 500 г">
@@ -225,7 +226,7 @@
       </ul>
 
       <p class="catalog__comment">
-        <a class="catalog__link catalog__link--icon" href="#">Показать еще 100500 товаров</a>
+        <a class="catalog__link catalog__link--icon text--upper" href="#">Показать еще 100500 товаров</a>
 
         На самом деле вкусов гораздо больше!
 
@@ -233,9 +234,9 @@
       </p>
     </section>
 
-    <section class="page-inner__add-products add-products">
+    <section class="main__add-products add-products">
       <h2 class="add-products__title">Дополнительные товары</h2>
-      <ul class="add-products__list">
+      <ul class="add-products__list list-default">
         <li class="add-products__item add-product">
           <h3 class="add-product__title">Сахарозаменитель</h3>
           <p class="add-product__units">1 упаковка (100 г)</p>
@@ -266,25 +267,25 @@
       </ul>
     </section>
 
-    <section class="page-inner__gift gift">
+    <section class="main__gift gift">
       <img class="gift__image" src="http://placehold.it/150x100" width="" height="" alt="Сумка в подарок">
     </section>
 
-    <section class="page-inner__contacts contacts">
+    <section class="main__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="contacts__map" src="http://placehold.it/150x100" width="" height="" alt="Адрес на карте">
+      <img src="img/bg-map-mobile@1x.png" width="" height="" alt="Адрес на карте">
     </section>
   </main>
 
-  <footer class="page-inner__footer main-footer">
+  <footer class="page__footer main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo logo logo--footer">
         <img class="logo__image" src="img/logo-footer.svg" width="120px" height="24px" alt="Кэт энерджи">
       </a>
 
-      <ul class="main-footer__social social">
+      <ul class="main-footer__social social list-default">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         </li>
@@ -301,8 +302,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
 
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34"
-            alt="Логотип html Академии">
+          <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип html Академии">
         </a>
       </p>
     </div>

@@ -1,25 +1,29 @@
 @import "page/page.less";
-@import "page-header/page-header.less";
-@import "main-nav/main-nav.less";
 @import "site-list/site-list.less";
 @import "programm/programm.less";
-@import "page-main/page-main.less";
+@import "main/main.less";
 @import "goals/goals.less";
 @import "goal/goal.less";
 @import "features/features.less";
 @import "feature/feature.less";
 @import "example/example.less";
 @import "contacts/contacts.less";
-@import "main-footer/main-footer.less";
-@import "social/social.less";
 @import "copyright/copyright.less";
-@import "page-inner/page-inner.less";
 @import "main-header/main-header.less";
 @import "catalog/catalog.less";
 @import "product/product.less";
+@import "text/text.less";
+@import "logo/logo.less";
 
 body {
   background: rgba(255, 255, 255, 1);
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: #111111;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -58,8 +62,19 @@ input[type="radio"].visually-hidden {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1;
-  font-weight: normal;
+  font-weight: 400;
   color: #ffffff;
 
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-default {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
 }
