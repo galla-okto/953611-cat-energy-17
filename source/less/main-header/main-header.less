@@ -18,3 +18,29 @@
 .main-header__navigation {
   display: none;
 }
+
+.main-header__logo-image {
+  height: 38px;
+  margin-right: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo-image {
+    height: 58px;
+    margin-right: 96px;
+  }
+
+  .main-header__navigation {
+    display: block;
+  }
+
+  .main-header__toggle-menu {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo-image {
+    margin-right: 540px;
+  }
+}
