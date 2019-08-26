@@ -6,3 +6,33 @@
 .features__item {
   margin: 0 0 10px;
 }
+
+@media (min-width: @tablet-width) {
+  .features__title {
+    padding: 0;
+    margin: 0 0 75px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .features__item {
+    margin: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .features__item {
+    padding: 115px 0 0;
+    margin: 0 80px 20px 0;
+  }
+}

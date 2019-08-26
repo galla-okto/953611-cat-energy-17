@@ -1,7 +1,4 @@
 .goal {
-  height: 256px;
-  width: 100%;
-
   display: flex;
   flex-direction: column;
 
@@ -14,7 +11,21 @@
 
 .goal__description {
   padding-bottom: 25px;
-  border-bottom: 1px solid #222222;
-
   margin-bottom: 25px;
+
+  border-bottom: 1px solid #222222;
+}
+
+.goal__filter {
+  margin-bottom: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .goal__description {
+    border-bottom: none;
+  }
+
+  .goal__filter {
+    margin-bottom: 65px;
+  }
 }
