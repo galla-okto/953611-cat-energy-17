@@ -16,13 +16,23 @@
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .features__item {
-    height: 250px;
-    width: 250px;
+    margin: 60px;
+  }
+}
 
-    background-color: antiquewhite;
+@media (min-width: @desktop-width) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .features__item {
+    padding: 115px 0 0;
+    margin: 0 80px 20px 0;
   }
 }

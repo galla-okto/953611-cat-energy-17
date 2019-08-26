@@ -11,6 +11,18 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+  }
+
+  .catalog__item {
+    padding: 60px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__item {
+    padding: 80px;
+    border-bottom: none;
   }
 }

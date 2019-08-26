@@ -16,10 +16,9 @@
 
 .page__header {
   padding: 0 20px;
+  margin-bottom: 0;
 
   border-bottom: 1px solid #ededed;
-
-  margin-bottom: 0;
 }
 
 .page__main {
@@ -29,8 +28,18 @@
 
 @media (min-width: @tablet-width) {
   .page__header {
-    border-bottom: none;
-
+    padding: 0 30px;
     margin-bottom: 60px;
+
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__header {
+    padding: 0 110px;
+    margin-bottom: 60px;
+
+    border-bottom: none;
   }
 }
